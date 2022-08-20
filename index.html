@@ -11,12 +11,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ayaka14732/syyon-vencie@6b08e67/charissil/CharisSIL.css"/>
   <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"/>
   <style>
+    html {background-color:#292a2d}
     body { line-height: 1.6; padding-left: 10em; padding-right: 10em; }
     @media only screen and (max-width: 1192px) {
       body { padding-left: 1em; padding-right: 1em; }
     }
-    .pure-form textarea { height: 10em; line-height: 1.6; resize: vertical; width: 100%; }
-    output { white-space: pre-line; }
+    .pure-form textarea { height: 10em; line-height: 1.6; resize: vertical; width: 100%;background-color:#111113; color:#c2c3c4}
+    output { white-space: pre-line; color:#c2c3c4; font-family:"Charis SIL",serif }
     .pure-form select { padding-top: 0; padding-bottom: 0; }
     :lang(cmn-Latn-fonipa) { font-family: CharisSILW, serif, serif; }
     a { color: #0366d6; text-decoration: none; }
@@ -24,9 +25,9 @@
   </style>
 </head>
 <body>
-  <h1>普通话 <span lang="en">IPA</span> 转换器</h1>
+  <h1 style="color:#dad4bd">普通话 <span lang="en"><a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet">IPA</span></a> 转换器</h1>
   <form class="pure-form" onsubmit="PutonghuaIPAConverter.handleConvert(); return false">
-    <p><textarea id="inputArea" lang="zh">春江潮水連海平，海上明月共潮生。</textarea></p>
+    <p><textarea id="inputArea" lang="zh">民生各有所樂兮，余獨好脩以為常。</textarea></p>
     <p>
       <select id="schemeSelect">
         <option value="1" selected>UntPhesoca 宽</option>
@@ -45,6 +46,11 @@
     <p><input class="pure-button" type="submit" value="转换"/></p>
   </form>
   <p><output id="outputArea"></output></p>
-  <p><a href="https://github.com/nk2028/putonghua-ipa-converter">源代码</a></p>
+  <p><a href="https://github.com/notch1p/putonghua-ipa-converter">Source</a></p>
+  <p><a href="https://github.com/nk2028/putonghua-ipa-converter">Original</a></p>
+  <p><a href="https://www.internationalphoneticassociation.org/IPAcharts/inter_chart_2018/IPA_2018.html">Interactive IPA Chart</a></p>
+  <p style="color:#c2c3c4">Please note that this page contains special phonetic symbols. You may need to have the relative <a href="https://www.internationalphoneticassociation.org/content/ipa-fonts">fonts</a>.<br>For those who are interested in:</p>
+
+  <p style="color:#c2c3c4">IPA Extensions <code>(U+0250–02AF)</code> <br>Spacing Modifier Letters <code>(U+02B0–02FF)</code> <br>Phonetic Extensions <code>(U+1D00–1D7F)</code></p>
 </body>
 </html>

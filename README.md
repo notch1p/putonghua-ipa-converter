@@ -22,7 +22,7 @@ You can find your freshly built index.js in the root folder.
 
 ### Web Server Configuration  (nginx)  
 
-only 2 files are needed in this case:`index.js index.html`
+only 2 files and **./data** are needed in this case:`index.js index.html`
 
 ```  
     location /

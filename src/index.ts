@@ -2,7 +2,7 @@ import { char2pinyins, pinyin2ipaArray, tones2ipa } from './converter';
 
 export function handleConvert() {
   if (char2pinyins == null || pinyin2ipaArray == null) {
-    alert('Loading...');
+    alert('Please include javascript in your server conf.');
   }
 
   const fragment = document.createDocumentFragment();

@@ -19,7 +19,7 @@
     .pure-form textarea { height: 10em; line-height: 1.6; resize: vertical; width: 100%;background-color:#111113; color:#c2c3c4}
     output { white-space: pre-line; color:#c2c3c4; font-family:"Charis SIL",serif }
     .pure-form select { padding-top: 0; padding-bottom: 0; }
-    :lang(cmn-Latn-fonipa) { font-family: CharisSILW, serif, serif; }
+    :lang(cmn-Latn-fonipa) { font-family: CharisSILW, serif; }
     a { color: #0366d6; text-decoration: none; }
     a:hover { border-bottom: 1px solid; }
   </style>
@@ -28,6 +28,7 @@
   <h1 style="color:#dad4bd">普通话 <span lang="en"><a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet">IPA</span></a> 转换器</h1>
   <form class="pure-form" onsubmit="PutonghuaIPAConverter.handleConvert(); return false">
     <p><textarea id="inputArea" lang="zh">民生各有所樂兮，余獨好脩以為常。</textarea></p>
+    <p style="color:#c2c3c4">Desired IPA Scheme:</p>
     <p>
       <select id="schemeSelect">
         <option value="1" selected>UntPhesoca 宽</option>
